@@ -1,0 +1,10 @@
+#loading-container .col-sm-12.text-center {
+    height: 70vh;
+    background: #ffffff33;
+}
+
+
+#loading-container .spinner-border.text-warning {
+    top: 45%;
+    position: absolute;
+}
