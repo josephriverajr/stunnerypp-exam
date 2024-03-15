@@ -1,6 +1,13 @@
 $(document).ready(function () {
     function useEffect() {
         showLoading();
+        
+        
+        $('#create-form #song_id').val("");
+        $('#create-form #title').val("");
+        $('#create-form #artist').val("");
+        $('#create-form #lyrics').val("");
+
         setTimeout(() => {
             fetchSongs();
         }, 750)
@@ -80,6 +87,7 @@ $(document).ready(function () {
                 console.log(response);
                 $("#song-added").empty(); 
                 $('#close-add').click(); // for closing a modal with backdrop
+                
                 useEffect();
             },
             error: function (e) {
